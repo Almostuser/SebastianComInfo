@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ titulo_pagina }}</h1>
+    <div class="lista-produtos">
+        {% if produtos %}
+            {% for produto in produtos %}
+                <div class="produto-card">
+                    <img src="{{ url_for('static', filename='images/placeholder.png') }}" alt="{{ produto.nome }}" style="width:100px; height:100px;">
+                    <h3>{{ produto.nome }}</h3>
+                    <p>Preço: {{ produto.preco }}</p>
+                    <a href="{{ url_for('detalhe_produto', produto_id=produto.id) }}">Ver detalhes</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Nenhum produto encontrado no momento.</p>
+        {% endif %}
+    </div>
+{% endblock %}

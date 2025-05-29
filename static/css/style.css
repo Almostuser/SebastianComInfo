@@ -1,0 +1,106 @@
+/* Reset básico para margem e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 15px 0;
+}
+
+header nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffb700;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #003366;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+}
+
+/* Botão estilizado */
+.btn {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffb700;
+    color: #004080;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}

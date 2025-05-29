@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="welcome-section">
+        <h1>Bem-vindo à {{ titulo_pagina }}!</h1>
+        <p>Sua loja de produtos de informática online com qualidade e confiança.</p>
+        <p>Explore nossos <a href="{{ url_for('listar_produtos') }}" class="link-produtos">produtos</a> e aproveite as melhores ofertas.</p>
+    </section>
+
+    <section class="promocoes-section">
+        <h2>Promoções Especiais</h2>
+        <div class="promocoes-cards">
+            <div class="promocao-card">
+                <h3>Mouse Gamer XYZ</h3>
+                <p>Desconto de 15% - R$ 127,50</p>
+            </div>
+            <div class="promocao-card">
+                <h3>Teclado Mecânico ABC</h3>
+                <p>Compre 1 e leve o mouse grátis!</p>
+            </div>
+            <div class="promocao-card">
+                <h3>Monitor LED 24"</h3>
+                <p>Frete grátis para todo Brasil</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
